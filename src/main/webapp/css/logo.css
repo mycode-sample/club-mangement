@@ -1,0 +1,25 @@
+.logo-s{
+	width: 20px;
+}
+.logo-m{
+	width: 50px;
+}
+.logo-l{
+	width:100px;
+}
+.qr-s{
+	width: 100px;
+}
+.qr-m{
+	width: 200px;
+}
+.qr-l{
+	width: 300px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul{
+	list-style: none;
+}

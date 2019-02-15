@@ -1,11 +1,11 @@
 package com.club.item;
 
-public class Activities {
+public class Activity {
 	
 	/**
 	 * 
 	 */
-	public Activities() {
+	public Activity() {
 		super();
 	}
 	/**
@@ -13,7 +13,7 @@ public class Activities {
 	 * @param activitiesClubId
 	 * @param activitiesStatus
 	 */
-	public Activities(String activitiesId, String activitiesClubId, short activitiesStatus) {
+	public Activity(String activitiesId, String activitiesClubId, short activitiesStatus) {
 		super();
 		this.activitiesId = activitiesId;
 		this.activitiesClubId = activitiesClubId;

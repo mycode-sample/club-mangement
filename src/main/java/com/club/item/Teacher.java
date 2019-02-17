@@ -25,6 +25,22 @@ public class Teacher {
 		this.teacherPassword = teacherPassword;
 		this.teacherDepartmentId = teacherDepartmentId;
 	}
+	/**
+	 * @param teacherId
+	 * @param teacherName
+	 * @param teacherPickname
+	 * @param teacherPassword
+	 * @param teacherDepartmentId
+	 */
+	public Teacher(String teacherId, String teacherName, String teacherPickname, String teacherPassword,
+			String teacherDepartmentId) {
+		super();
+		this.teacherId = teacherId;
+		this.teacherName = teacherName;
+		this.teacherPickname = teacherPickname;
+		this.teacherPassword = teacherPassword;
+		this.teacherDepartmentId = teacherDepartmentId;
+	}
 	public String getTeacherId() {
 		return teacherId;
 	}

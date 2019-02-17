@@ -1,6 +1,6 @@
 package com.club.item;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Club {
 	
@@ -51,7 +51,6 @@ public class Club {
 	 */
 	public Club() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getClubId() {

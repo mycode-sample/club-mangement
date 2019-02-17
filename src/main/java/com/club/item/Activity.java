@@ -2,6 +2,10 @@ package com.club.item;
 
 public class Activity {
 	
+	String activityId;//活动id
+	String activityClubId;//活动所属社团
+	short  activityStatus;//活动状态,-1,0,1
+	String activityName;
 	/**
 	 * 
 	 */
@@ -9,40 +13,41 @@ public class Activity {
 		super();
 	}
 	/**
-	 * @param activitiesId
-	 * @param activitiesClubId
-	 * @param activitiesStatus
+	 * @param activityId
+	 * @param activityClubId
+	 * @param activityStatus
+	 * @param activityName
 	 */
-	public Activity(String activitiesId, String activitiesClubId, short activitiesStatus) {
+	public Activity(String activityId, String activityClubId, short activityStatus, String activityName) {
 		super();
-		this.activitiesId = activitiesId;
-		this.activitiesClubId = activitiesClubId;
-		this.activitiesStatus = activitiesStatus;
+		this.activityId = activityId;
+		this.activityClubId = activityClubId;
+		this.activityStatus = activityStatus;
+		this.activityName = activityName;
 	}
-	
-	String activitiesId;//活动id
-	String activitiesClubId;//活动所属社团
-	short  activitiesStatus;//活动状态,-1,0,1
-	
-	public String getActivitiesId() {
-		return activitiesId;
+	public String getActivityId() {
+		return activityId;
 	}
-	public String getActivitiesClubId() {
-		return activitiesClubId;
+	public String getActivityClubId() {
+		return activityClubId;
 	}
-	public short getActivitiesStatus() {
-		return activitiesStatus;
+	public short getActivityStatus() {
+		return activityStatus;
 	}
-	public void setActivitiesId(String activitiesId) {
-		this.activitiesId = activitiesId;
+	public String getActivityName() {
+		return activityName;
 	}
-	public void setActivitiesClubId(String activitiesClubId) {
-		this.activitiesClubId = activitiesClubId;
+	public void setActivityId(String activityId) {
+		this.activityId = activityId;
 	}
-	public void setActivitiesStatus(short activitiesStatus) {
-		this.activitiesStatus = activitiesStatus;
+	public void setActivityClubId(String activityClubId) {
+		this.activityClubId = activityClubId;
 	}
-	
-	
+	public void setActivityStatus(short activityStatus) {
+		this.activityStatus = activityStatus;
+	}
+	public void setActivityName(String activityName) {
+		this.activityName = activityName;
+	}
 	
 }

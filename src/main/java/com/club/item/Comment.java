@@ -4,7 +4,7 @@ public class Comment {
 	String commentId;
 	String commentActivitiesId;
 	String commentUserId;
-	String commentFloor;
+	int commentFloor;
 	String commentContent;
 	/**
 	 * 
@@ -19,7 +19,7 @@ public class Comment {
 	 * @param commentFloor
 	 * @param commentContent
 	 */
-	public Comment(String commentId, String commentActivitiesId, String commentUserId, String commentFloor,
+	public Comment(String commentId, String commentActivitiesId, String commentUserId, int commentFloor,
 			String commentContent) {
 		super();
 		this.commentId = commentId;
@@ -38,7 +38,7 @@ public class Comment {
 	public String getCommentUserId() {
 		return commentUserId;
 	}
-	public String getCommentFloor() {
+	public int getCommentFloor() {
 		return commentFloor;
 	}
 	public String getCommentContent() {
@@ -53,7 +53,7 @@ public class Comment {
 	public void setCommentUserId(String commentUserId) {
 		this.commentUserId = commentUserId;
 	}
-	public void setCommentFloor(String commentFloor) {
+	public void setCommentFloor(int commentFloor) {
 		this.commentFloor = commentFloor;
 	}
 	public void setCommentContent(String commentContent) {

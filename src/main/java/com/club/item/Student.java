@@ -29,6 +29,24 @@ public class Student {
 		this.studentName = studentName;
 		this.studentPassword = studentPassword;
 	}
+	/**
+	 * @param studentId
+	 * @param studentDepartmentId
+	 * @param studentProfessionId
+	 * @param studentName
+	 * @param studentPickname
+	 * @param studentPassword
+	 */
+	public Student(String studentId, String studentDepartmentId, String studentProfessionId, String studentName,
+			String studentPickname, String studentPassword) {
+		super();
+		this.studentId = studentId;
+		this.studentDepartmentId = studentDepartmentId;
+		this.studentProfessionId = studentProfessionId;
+		this.studentName = studentName;
+		this.studentPickname = studentPickname;
+		this.studentPassword = studentPassword;
+	}
 	public String getStudentId() {
 		return studentId;
 	}

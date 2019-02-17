@@ -24,7 +24,7 @@ public class Profession {
 	public String getProfessionId() {
 		return professionId;
 	}
-	public String getProfessionname() {
+	public String getProfessionName() {
 		return professionname;
 	}
 	public String getProfessionDepartmentId() {

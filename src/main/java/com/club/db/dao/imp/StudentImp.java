@@ -147,10 +147,11 @@ public class StudentImp implements StudentDao{
 				"    `student`.`student_name`,\r\n" + 
 				"    `student`.`student_pickname`,\r\n" + 
 				"    `student`.`student_password`\r\n" + 
-				"FROM `club`.`student`;\r\n" + 
-				"	where  `student_id` = ?";
+				"FROM `club`.`student`\r\n" + 
+				" where student_id=?";
 		try {
 			PreparedStatement pre=con.prepareStatement(sql);
+			pre.setString(1,id);
 			ResultSet res=pre.executeQuery();
 			res.next();
 			String department=res.getString(2);

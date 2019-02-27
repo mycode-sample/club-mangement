@@ -15,6 +15,7 @@
 </head>
 <body>  
 	<!-- 头部，显示当前登录账号 -->
+	<jsp:include page="include/header.jsp"></jsp:include>
 	<!-- 体部 -->
 	<div class="container">
 		<div class="row">
@@ -56,14 +57,14 @@
 			<!-- 登录框 -->
 			<div class="col-lg-3">
 				<div class="text-info" style="margin: 5px;font-size: large;">登录</div>
-				<form action="login" method="post" name="login">
+				<form  action="Login" method="post" name="userLogin">
 					<div class="input-group" style="margin: 5px;">
 						<span class="input-group-addon glyphicon glyphicon-user" style="top: 0px;"></span>
 						<input type="text" name="username" class="form-control" placeholder="用户名">
 					</div>
 					<div class="input-group" style="margin: 5px;">
 						<span class="input-group-addon glyphicon glyphicon-lock" style="top: 0px;"></span>
-						<input type="password" class="form-control" placeholder="密码">
+						<input type="password" class="form-control" name="password" placeholder="密码">
 					</div>
 					<div class="input-group" style="margin: 5px;text-align: center;">
 						<input type="radio" checked="checked" value="club" name="user">社团
@@ -72,7 +73,7 @@
 						<input type="radio"  value="student" name="user">学生
 					</div>
 					<div class="btn-group">
-						<input type="submit" value="登录" class="btn btn-default">
+						<input type="submit"  value="登录" class="btn btn-default">
 					</div>
 				</form>
 			</div>
@@ -80,5 +81,6 @@
 		
 	</div>
 	<!-- 尾部 -->
+	<jsp:include page="include/copyright.jsp"></jsp:include>
 </body>
 </html>

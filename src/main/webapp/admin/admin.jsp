@@ -1,31 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" isELIgnored="false" %>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<%@include file="../include/frame.jsp" %>
-<link rel="stylesheet" href="../css/default.css">
+<%@include file="../include/include.html" %>
 <title>社团管理-管理员</title>
 </head>
 <body>
 	<!-- 头部 -->
-	<jsp:include page="../include/header.jsp"></jsp:include>
+	
 	<!-- 体部 -->
-	<div class="container">
-		<div class="row">
-			<!-- 导航栏 -->
-			<jsp:include page="../include/adminNavigation.jsp"></jsp:include>
-			<!-- 内容栏 -->
-			<div class="col-lg-10">
-				<div  class="text-info" style="text-align: center;font-size: xx-large;">
-					欢迎${user.administratorName}登陆本系统
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<!-- 底部 -->
-	<jsp:include page="/include/copyright.jsp"></jsp:include>
 </body>
 </html>

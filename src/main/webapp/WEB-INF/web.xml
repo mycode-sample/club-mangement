@@ -10,38 +10,8 @@
   	<description></description>
   	<servlet-class>com.club.servlet.Login</servlet-class>
   </servlet>
-  <servlet>
-  	<servlet-name>Admin</servlet-name>
-  	<display-name>Admin</display-name>
-  	<description></description>
-  	<servlet-class>com.club.servlet.Admin</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>AdminImp</servlet-name>
-  	<display-name>AdminImp</display-name>
-  	<description></description>
-  	<servlet-class>com.club.servlet.AdminImp</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>AdminStudentUpdate</servlet-name>
-  	<display-name>AdminStudentUpdate</display-name>
-  	<description></description>
-  	<servlet-class>com.club.servlet.AdminStudentUpdate</servlet-class>
-  </servlet>
   <servlet-mapping>
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>Admin</servlet-name>
-  	<url-pattern>/Admin</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AdminImp</servlet-name>
-  	<url-pattern>/AdminImp</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AdminStudentUpdate</servlet-name>
-  	<url-pattern>/AdminStudentUpdate</url-pattern>
   </servlet-mapping>
 </web-app>

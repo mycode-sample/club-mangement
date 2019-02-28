@@ -65,7 +65,6 @@ public class StudentImp implements StudentDao{
 				"WHERE `student`.`student_id`=?;\r\n";
 		try {
 			PreparedStatement pre=con.prepareStatement(sql);
-			pre.setString(1,id);
 			int n=pre.executeUpdate();
 			pre.close();
 			return n;

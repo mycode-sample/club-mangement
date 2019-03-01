@@ -1,17 +1,15 @@
 package com.club.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.club.db.dao.imp.AdministratorImp;
-import com.club.db.dao.imp.ClubImp;
-import com.club.db.dao.imp.ClubTypeImp;
 import com.club.db.dao.imp.StudentImp;
 import com.club.item.Administrator;
-import com.club.item.Club;
 import com.club.item.Student;
 
 /**

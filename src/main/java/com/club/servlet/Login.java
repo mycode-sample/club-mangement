@@ -47,6 +47,7 @@ public class Login extends HttpServlet {
 				Administrator user=admin.retrieve(username);
 				String psw=user.getAdministratorPassword();
 				if(user!=null&&password.equals(psw.toString())) {
+					request.getSession().setAttribute("user",user);
 					response.sendRedirect("admin/admin.jsp");
 				}
 				else {
@@ -63,8 +64,6 @@ public class Login extends HttpServlet {
 				StudentImp student=new StudentImp();
 				Student stu=student.retrieve(username);
 				String psw=stu.getStudentPassword();
-				System.out.println(stu.getStudentName());
-				System.out.println(stu.getStudentPassword());
 				if(stu!=null&&password.equals(psw.toString())) {
 					response.sendRedirect("student/student.jsp");
 				}

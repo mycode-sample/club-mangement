@@ -20,8 +20,8 @@
 			<div class="col-lg-3"></div>
 			<div class="col-lg-3">
 				<div  class="text-info" style="text-align: center;font-size: xx-large;">
-					<form  action="../AdminImp" method="post" name="userLogin">
-						<input type="hidden" name="adminType" value="updateUsername">
+					<form  action="../Admin" method="post" name="userLogin">
+						<input type="hidden" name="type" value="updateUsername">
 						<input type="hidden" name="id" value=${user.administratorId }>
 						<div class="input-group" style="margin: 5px;">
 							<span class="input-group-addon glyphicon glyphicon-lock" style="top: 0px;"></span>

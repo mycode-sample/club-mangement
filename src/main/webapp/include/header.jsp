@@ -4,10 +4,11 @@
 	<div class="container">
 		<div class="row bg-info">
 			<div class="col-lg-1">
-				<img src="<%=request.getContextPath() %>/image/logo/logo.png" alt="" class="logo-s">
+				<img src="<%=request.getContextPath() %>/image/logo/logo.png" alt="" class="logo-m">
 			</div>
-			<div class="col-lg-10">
-				<font>版权所有，盗版必究</font>
+			<div class="col-lg-9"></div>
+			<div class="col-lg-2" style="text-align: right;">
+				欢迎${user.administratorName}登陆本系统
 			</div>
 		</div>
 	</div>

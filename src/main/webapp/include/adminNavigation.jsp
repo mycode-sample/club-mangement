@@ -34,8 +34,8 @@
 							<div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
 							  <div class="panel-body">
 								<ul class="nav nav-pills nav-stacked" style="width:100px">
-								  <li role="presentation"><a href="/club-mangement/Admin?type=updatePassword" class="text-primary">修改密码</a></li>
-								  <li role="presentation"><a href="/club-mangement/Admin?type=updateUsername" class="text-primary">修改用户名</a></li>
+								  <li role="presentation"><a href="/club-mangement/AdminJump?type=updatePasswordPage" class="text-primary">修改密码</a></li>
+								  <li role="presentation"><a href="/club-mangement/AdminJump?type=updateUsernamePage" class="text-primary">修改用户名</a></li>
 								</ul>
 							  </div>
 							</div>

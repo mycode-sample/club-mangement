@@ -1,20 +1,26 @@
 .logo-s{
 	width: 20px;
+	padding: 2px;
 }
 .logo-m{
 	width: 50px;
+	padding: 5px;
 }
 .logo-l{
 	width:100px;
+	padding: 10px;
 }
 .qr-s{
 	width: 100px;
+	padding: 5px;
 }
 .qr-m{
 	width: 200px;
+	padding: 5px;
 }
 .qr-l{
 	width: 300px;
+	padding: 5px;
 }
 a{
 	text-decoration: none;

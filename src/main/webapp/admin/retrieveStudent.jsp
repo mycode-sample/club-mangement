@@ -34,7 +34,7 @@
 				    	<td>${stu.studentId }</td>
 				        <td>${stu.studentName}</td>
 				        <td>
-							<a href="#">编辑</a>
+							<a href="../AdminJump?type=updateStudentPage&studentId=${stu.studentId }">编辑</a>
 				        </td>
 				        <td>
 							<a href="../AdminStudentUpdate?type=deleteStudent&studentId=${stu.studentId }" class="text-capitalize">删除</a>

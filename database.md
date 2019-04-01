@@ -20,21 +20,19 @@
 ## 老师表	teacher
 老师表有两个字段，一个是职工号，一个是姓名。
 - 职工号pk teacher_id char(10)
-	- 入编年份x2
-	- 学位x1
-	- 毕业专业x2
-	- 所在学院x2
-	- 职工号x3
+  - 入编年份x2
+  - 学位x1
+  - 学院专业
+  - 职工号x3
 - 姓名 teacher_name varchar(16) nn
 - 昵称 teacher_pickname varchar(16) null
 - 密码 teacher_password varchar(16) nn
 - 所在学院 fk 学院表.id teacher_department_id char(2)
 ## 社团表 club
 - 社团id pk club_id char(6)
-	- 注册年份x2
-	- 社团类型x2
-	- 挂靠学院x2
-- 社团账号 club_account varchar(32) nn uq
+  - 注册年份x2
+  - 社团类型x2
+  - 挂靠学院x2
 - 社团名称 club_name varchar(16) nn uq
 - 注册日期 club_registered_time date nn
 - 审批人  fk  管理员表.职工号  club_reviewer_administrator_id char(4) 
@@ -55,8 +53,7 @@
 - 所在学院  fk  学院表.学院号码 profession_department_id char(2)
 ## 活动表 activities
 - 活动id pk activities_id char(12) 
-	- 活动时间x12
-	- 社团
+  - 活动时间x12
 - 负责社团  fk  社团表.社团号 activities_club_id char(6)
 - 状态代码（结束，进行，审批中） activities_status TINYINT
 ## 评价表 comment

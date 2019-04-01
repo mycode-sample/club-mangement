@@ -4,6 +4,8 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+    
   <servlet>
   	<servlet-name>Login</servlet-name>
   	<display-name>Login</display-name>
@@ -28,10 +30,30 @@
   	<description></description>
   	<servlet-class>com.club.servlet.AdminStudentUpdate</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>List</servlet-name>
+  	<display-name>List</display-name>
+  	<description></description>
+  	<servlet-class>com.club.servlet.List</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Demo</servlet-name>
+  	<display-name>Demo</display-name>
+  	<description></description>
+  	<servlet-class>com.club.servlet.Demo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminJump</servlet-name>
+  	<display-name>AdminJump</display-name>
+  	<description></description>
+  	<servlet-class>com.club.servlet.AdminJump</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login</url-pattern>
   </servlet-mapping>
+  
   <servlet-mapping>
   	<servlet-name>Admin</servlet-name>
   	<url-pattern>/Admin</url-pattern>
@@ -44,4 +66,17 @@
   	<servlet-name>AdminStudentUpdate</servlet-name>
   	<url-pattern>/AdminStudentUpdate</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>List</servlet-name>
+  	<url-pattern>/List</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Demo</servlet-name>
+  	<url-pattern>/Demo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminJump</servlet-name>
+  	<url-pattern>/AdminJump</url-pattern>
+  </servlet-mapping>
 </web-app>
+

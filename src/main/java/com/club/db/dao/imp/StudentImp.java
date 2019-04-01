@@ -61,10 +61,12 @@ public class StudentImp implements StudentDao{
 
 	@Override
 	public int delete(String id) {
+//		删除学生，返回删除数量
 		String sql="DELETE FROM `club`.`student`\r\n" + 
 				"WHERE `student`.`student_id`=?;\r\n";
 		try {
 			PreparedStatement pre=con.prepareStatement(sql);
+			pre.setString(1,id);
 			int n=pre.executeUpdate();
 			pre.close();
 			return n;

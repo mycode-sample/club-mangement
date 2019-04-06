@@ -14,7 +14,6 @@ import com.club.db.dao.AdministratorDao;
 import com.club.item.Administrator;
 
 public class AdministratorImp implements AdministratorDao{
-	static Logger logger=Logger.getLogger(AdministratorImp.class);
 	Connection con;
 	/**
 	 * 
@@ -46,7 +45,7 @@ public class AdministratorImp implements AdministratorDao{
 			pre.close();
 			return n;
 		} catch (SQLException e) {
-			e.printStackTrace();
+			e.printStackTrace();	
 			return 0;
 		}
 	}

@@ -1,1 +1,9 @@
-/target/
+# idea
+/.idea
+/*.iml
+
+# maven
+target
+
+# logs
+log/
